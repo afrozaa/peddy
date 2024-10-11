@@ -1,156 +1,210 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Adoption</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Adoption</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <header class="w-11/12 mx-auto">
-        <nav class="w-11/12 mx-auto">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <img src="assets/logo.webp" alt="Logo">
-                    <div class="font-extrabold p-2">Peddy</div>
-                </div>
-                <div class="navbar-center lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <svg class="h-11 w-11" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="56" height="56" rx="28" fill="white"/>
-                        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#0E7A81" stroke-opacity="0.2"/>
-                        <g clip-path="url(#clip0_5_26)">
-                            <path d="M24 23C24 24.0609 24.4214 25.0783 25.1716 25.8284C25.9217 26.5786 26.9391 27 28 27C29.0609 27 30.0783 26.5786 30.8284 25.8284C31.5786 25.0783 32 24.0609 32 23C32 21.9391 31.5786 20.9217 30.8284 20.1716C30.0783 19.4214 29.0609 19 28 19C26.9391 19 25.9217 19.4214 25.1716 20.1716C24.4214 20.9217 24 21.9391 24 23Z" stroke="#131313" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M22 37V35C22 33.9391 22.4214 32.9217 23.1716 32.1716C23.9217 31.4214 24.9391 31 26 31H30C31.0609 31 32.0783 31.4214 32.8284 32.1716C33.5786 32.9217 34 33.9391 34 35V37" stroke="#131313" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_5_26">
-                                <rect width="24" height="24" fill="white" transform="translate(16 16)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="w-11/12 mx-auto py-10">
-        <div class="hero">
-            <div class="hero-content text-center">
-                <div>
-                    <p class="font-semibold opacity-80">Bringing Families Together❤️‍🔥</p>
-                    <h1 class="text-6xl font-bold">Your Path to Adoption <br>Starts Here</h1>
-                    <p class="py-6">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at <br>its layout. The point of using Lorem Ipsum is that it has a.
-                    </p>
-                    <button style="background-color: #0e7a81;" class="btn text-white py-2 px-4 rounded-lg font-inter">
-                       <a href="#">View More</a> 
-                    </button>
-                </div>
-            </div>
+  <header class="w-11/12 mx-auto">
+    <nav class="w-11/12 mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <i class="fa-solid fa-bars mr-2 lg:hidden md:hidden"></i>
+          <img src="assets/logo.webp" alt="Logo" />
+          <div class="font-extrabold p-2">Peddy</div>
         </div>
-        <div class="w-11/12 mx-auto py-10 flex justify-center">
-            <img src="assets/pet.webp" alt="Adopt a pet">
+        <div class="navbar-center hidden lg:flex md:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
+        <div class="navbar-end">
+          <svg class="h-11 w-11" width="56" height="56" viewBox="0 0 56 56" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="56" height="56" rx="28" fill="white" />
+            <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#0E7A81" stroke-opacity="0.2" />
+            <g clip-path="url(#clip0_5_26)">
+              <path
+                d="M24 23C24 24.0609 24.4214 25.0783 25.1716 25.8284C25.9217 26.5786 26.9391 27 28 27C29.0609 27 30.0783 26.5786 30.8284 25.8284C31.5786 25.0783 32 24.0609 32 23C32 21.9391 31.5786 20.9217 30.8284 20.1716C30.0783 19.4214 29.0609 19 28 19C26.9391 19 25.9217 19.4214 25.1716 20.1716C24.4214 20.9217 24 21.9391 24 23Z"
+                stroke="#131313" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M22 37V35C22 33.9391 22.4214 32.9217 23.1716 32.1716C23.9217 31.4214 24.9391 31 26 31H30C31.0609 31 32.0783 31.4214 32.8284 32.1716C33.5786 32.9217 34 33.9391 34 35V37"
+                stroke="#131313" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_5_26">
+                <rect width="24" height="24" fill="white" transform="translate(16 16)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <!-- Categories Section -->
-        <section class="w-11/12 mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-6">Adopt  Your  Best Friend</h2>
-            <p class="text-center mb-8">It is a long established fact that a reader will be distracted by the readable content of a<br> page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
-            <nav id="categories" class="flex flex-col justify-between md:flex-row gap-y-4 sm:flex-row gap-y-4">
-                <!-- Categories will be dynamically inserted here -->
-            </nav>
-        </section>
-        
-        
-        
+  <main class="">
+    <div class="hero">
+      <div class="hero-content text-center">
+        <div>
+          <p class="font-semibold opacity-80">Bringing Families Together❤️‍🔥</p>
+          <h1 class="text-6xl font-bold">
+            Your Path to Adoption <br />Starts Here
+          </h1>
+          <p class="py-6">
+            Peddy is your gateway to finding a loyal and loving pet. Through adoption, you provide a forever home to a
+            deserving animal while gaining a companion who will <br> bring joy and affection to your life. Save a life,
+            change your world.
+          </p>
 
-        <!-- Best Deal For you Section -->
-        <section class="w-11/12 mx-auto flex py-6">
-          <div class="flex-col ">
-            <h2 class="text-4xl font-bold align-left mb-8">Best Deal For you</h2>
-            <div id="pets" class="grid lg:grid-cols-3 gap-4 sm:grid-cols-1">
-                <!-- Pet cards will be dynamically inserted here -->
-            </div>
+          <a href="#best-friend"><button style="background-color: #0e7a81"
+              class="btn text-white py-2 px-4 rounded-lg font-inter">
+              View More
+            </button></a>
+        </div>
+      </div>
+    </div>
+    <div class="w-11/12 mx-auto flex justify-center">
+      <img src="assets/pet.webp" alt="Adopt a pet" />
+    </div>
+
+    <!-- Categories Section -->
+    <section id="best-friend" class="w-11/12 mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-6">
+        Adopt Your Best Friend
+      </h2>
+      <p class="text-center mb-8">
+        Peddy is your gateway to finding a loyal and loving pet. Through adoption, you provide a forever home to a
+        deserving animal while gaining a companion who will <br> bring joy and affection to your life. Save a life,
+        change your world.
+      </p>
+      <nav id="categories" class="flex flex-col gap-y-4 lg:flex-row pb-6 items-center justify-between">
+        <!-- Categories will be dynamically inserted here -->
+      </nav>
+    </section>
+
+    <!-- Best Deal For you Section -->
+    <section class="w-11/12 mx-auto">
+      <!-- nav section for the best deal and sort button -->
+      <div class="flex justify-between">
+        <h2 class="text-4xl font-bold mb-8">Best Deal For you</h2>
+        <!-- sort by price button -->
+        <button id="btn-sort" style="background-color: #0e7a81"
+          class="sort-pets btn border-transparent font-bold text-white py-2 px-4 rounded-lg font-inter">
+          Sort by Price
+        </button>
+      </div>
+    </section>
+
+    <section class="w-11/12 mx-auto flex gap-6 pt-6">
+      <!-- container for dynamic pet display and like pet display area -->
+
+      <div id="pets" class="w-8/12 lg:w-9/12 grid grid-cols-1 lg:grid-cols-3 gap-y-4 gap-x-4 mb-8">
+        <!-- Pet cards will be dynamically inserted here -->
+      </div>
+      <div id="loading-spinner" class="hidden w-full h-96 flex items-center justify-center">
+        <span class="loading loading-bars loading-lg"></span>
+      </div>
+
+      <!-- Sort by Price Section -->
+      <div id="like-section-area" class="w-4/12 flex-col space-x-5 space-y-6 border rounded-2xl mb-8">
+        <div class="text-right"></div>
+        <div id="liked-pets" class="flex flex-wrap gap-1"></div>
+      </div>
+    </section>
+
+    <button id="showData" class="btn hidden" onclick="detailModal.showModal()">
+      open modal
+    </button>
+    <dialog id="detailModal" class="modal modal-bottom sm:modal-middle backdrop-blur">
+      <div class="modal-box">
+        <div id="modalDetails"></div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn hidden" onclick="openModal()">Open Modal</button>
+
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle backdrop-blur-sm">
+      <div class="modal-box flex flex-col justify-center items-center">
+        <img src="https://img.icons8.com/?size=100&id=yHeF9urVx2aM&format=png&color=000000" alt="" />
+        <h3 class="text-lg font-bold">Congratulations</h3>
+        <p class="py-4 text-center">
+          Thank you for opening your heart and giving this wonderful pet a
+          forever home."
+        </p>
+        <span class="countdown font-mono text-6xl">
+          <span class="text-[#FFD000]" style="--value: 3"></span>
+        </span>
+
+        <div class="modal-action"></div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="footer bg-black text-neutral-content p-20 font-base-200">
+    <div class="w-11/12 mx-auto flex justify-between gap-y-5 flex-col lg:flex-row">
+      <nav class="flex lg:flex-col md:flex-row sm:flex-col">
+        <div class="flex flex-col">
+          <div class="flex flex-row gap-2 py-3">
+            <img class="h-5 w-5" src="assets/logo.webp" alt="Logo" />
+            <div class="font-bold text-2xl">Peddy</div>
           </div>
-            <!-- Sort by Price Section -->
-            <div class="flex-col space-x-5 space-y-6 ">
-                <div class="text-right">
-                    <button style="background-color: #0e7a81;" class="btn border-transparent font-bold text-white py-2 px-4 rounded-lg font-inter">
-                        Sort by Price
-                    </button>
-                </div>                
-            <div id="liked-pets" class="">
-                <div >
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body h-[2623px] w-[600px] mx-auto border-2 rounded-xl">
-                          
-                          
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-
-
-    <footer class="footer bg-black text-neutral-content p-20 font-base-200 ">
-        <div class="w-11/12 mx-auto flex justify-between gap-y-5 lg:flex md: flex-row sm: flex-row">
-            <nav class="flex lg:flex-col md:flex-row sm:flex-col">
-                <div class="flex flex-col">
-                    <div class="flex flex-row gap-2 py-3">
-                        <img class="h-5 w-5" src="assets/logo.webp" alt="Logo">
-                        <div class="font-bold text-2xl">Peddy</div>
-                    </div>
-                    <a href="#" class="">Location: av. Washington 165, NY CA 54003</a>
-                    <a href="#" class="">Phone: +31 85 964 47 25</a>
-                    <a href="#" class="">Email: info@yourdomain.com</a>
-                    <a href="#" class="">Openings hours: 9.00 AM - 5.00 PM</a>
-                    <div class="flex gap-3 py-3">
-                        <img class="h-6 w-6 object-cover" src="assets/facebook.png" alt="Facebook">
-                        <img class="h-6 w-6 object-cover" src="assets/x.png" alt="Twitter">
-                        <img class="h-6 w-6 object-cover" src="assets/youtube.png" alt="YouTube">
-                        <img class="h-6 w-6 object-cover" src="assets/instagram.png" alt="Instagram">
-                    </div>
-                </div>
-            </nav>
-            
-            <nav class="flex lg:flex-col md:flex-row sm:flex-col">
-                <div class="flex flex-col gap-2 py-3">
-                <h6 class="font-bold text-xl">Useful Links</h6>
-                <a href="#" class="link link-hover">About us</a>
-                <a href="#" class="link link-hover">Contact</a>
-                <a href="#" class="link link-hover">Jobs</a>
-                <a href="#" class="link link-hover">Press kit</a>
-                </div>
-            </nav>
-            
-            <nav class="gap-3 flex lg:flex-col md:flex-row sm:flex-col">
-                <div class="flex flex-col gap-2 py-3">
-                    <h6 class="font-bold text-xl">Drop a message</h6>
-                    <label class="w-11/12 input input-bordered input-ghost flex items-center gap-2">
-                        <input type="text" class="input border-none" placeholder="Enter your email" />
-                    </label>
-                    <button style="background-color: #0e7a81;" class="btn border-none border-transparent w-11/12 font-bold text-white py-2 px-4 rounded-lg font-inter">
-                        Subscribe
-                    </button>
-                </div>
-            </nav>
+          <a href="#" class="">Location: av. Washington 165, NY CA 54003</a>
+          <a href="#" class="">Phone: +31 85 964 47 25</a>
+          <a href="#" class="">Email: info@yourdomain.com</a>
+          <a href="#" class="">Openings hours: 9.00 AM - 5.00 PM</a>
+          <div class="flex gap-3 py-3">
+            <img class="h-6 w-6 object-cover" src="assets/facebook.png" alt="Facebook" />
+            <img class="h-6 w-6 object-cover" src="assets/x.png" alt="Twitter" />
+            <img class="h-6 w-6 object-cover" src="assets/youtube.png" alt="YouTube" />
+            <img class="h-6 w-6 object-cover" src="assets/instagram.png" alt="Instagram" />
+          </div>
         </div>
-    </footer>
-    
+      </nav>
 
-    <script src="pet.js"></script> <!-- Link to your JS file -->
+      <nav class="flex lg:flex-col md:flex-row sm:flex-col">
+        <div class="flex flex-col gap-2 py-3">
+          <h6 class="font-bold text-xl">Useful Links</h6>
+          <a href="#" class="link link-hover">About us</a>
+          <a href="#" class="link link-hover">Contact</a>
+          <a href="#" class="link link-hover">Jobs</a>
+          <a href="#" class="link link-hover">Press kit</a>
+        </div>
+      </nav>
+
+      <nav class="gap-3 flex lg:flex-col md:flex-row sm:flex-col">
+        <div class="flex flex-col gap-2 py-3">
+          <h6 class="font-bold text-xl">Drop a message</h6>
+          <label class="w-11/12 input input-bordered input-ghost flex items-center gap-2">
+            <input type="text" class="input border-none" placeholder="Enter your email" />
+          </label>
+          <button style="background-color: #0e7a81"
+            class="btn border-none border-transparent w-11/12 font-bold text-white py-2 px-4 rounded-lg font-inter">
+            Subscribe
+          </button>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="pet.js"></script>
+  <!-- Link to your JS file -->
 </body>
+
 </html>
